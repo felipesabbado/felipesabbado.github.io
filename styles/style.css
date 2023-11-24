@@ -32,7 +32,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -41,19 +41,20 @@ body {
 .apresentacao {
     padding: 5% 10%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    gap: 80px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 32px;
+    font-size: 2rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -62,7 +63,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -77,19 +78,19 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 1,25rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -101,11 +102,10 @@ body {
     background-color: var(--cor-hover);
 }
 
-#my_photo {
-    width: 40%;
+.apresentacao__imagem {
+    width: 50%;
     border-radius: 10%;
     border: 2px solid var(--cor-terciaria);
-    /* transform: scaleX(-1); */
 }
 
 .rodape {
@@ -114,6 +114,25 @@ body {
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5% 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
