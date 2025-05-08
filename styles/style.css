@@ -67,6 +67,11 @@ body {
     font-family: var(--fonte-secundaria);
 }
 
+.apresentacao__conteudo__texto__bullet {
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+}
+
 .apresentacao__links {
     display: flex;
     flex-direction: column;
